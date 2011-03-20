@@ -4,44 +4,86 @@
 <meta charset="utf-8"/>
 <title>Magenta CSS framework</title>
 <style>
+html, body {
+background: #F6F6F6;
+margin: 0;
+}
 body {
 font-family: 'Arial', sans-serif;
+background-image: -moz-linear-gradient(top, #DDD 0, #F6F6F6 25%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #DDD), color-stop(25%, #F6F6F6));
+}
+h1 {
+margin: 0;
+text-align: center;
+border-bottom: 1px solid #F0F;
+text-shadow: 0 1px 0 #FFF;
 }
 section {
 margin: 10px;
 }
-#braindead-inverted * {
+section div {
+margin: 10px;
+background: #FFF;
+padding: 20px 10px;
+border: 1px solid #DDD;
+}
+#braindead-inverted div * {
 background: #FFF;
 }
-#braindead * {
+#braindead div * {
 background: #000;
 }
-#magenta * {
+#magenta div * {
 color: #F0F;
 background: #F0F;
+}
+footer {
+text-align: center;
+}
+footer a {
+color: #CCC;
+text-shadow: 0 1px 0 #FFF;
+font-size: 12px;
 }
 </style>
 </head>
 <body>
-<h1>Default system colors</h1>
+<h1>Magenta CSS Framework</h1>
 <section id="default">
+<h2>Default system colors</h2>
+<p>This is how your normal Input controls will render in an unstyled HTML page.</p>
+<div>
     <input type="text" />
     <input type="submit" />
+</div>
 </section>
-<h1>Braindead CSS coloring</h1>
 <section id="braindead">
+<h2>Braindead CSS coloring</h2>
+<p>This is an example of 'braindead CSS'. The foreground color has been set to black, making the input field unusable in systems that have 'white over black' settings.</p>
+<div>
     <input type="text" />
     <input type="submit" />
+</div>
 </section>
-<h1>Inverted Braindead CSS coloring</h1>
 <section id="braindead-inverted">
+<h2>Inverted Braindead CSS coloring</h2>
+<p>This is the inverted case, it is less common. The background color has been set to white. The result can lead to unusable controls on inverted color system settings.</p>
+<div>
     <input type="text" />
     <input type="submit" />
+</div>
 </section>
-<h1>Magenta CSS ;)</h1>
 <section id="magenta">
+<h2>Magenta CSS ;)</h2>
+<p>This shows a piece of what Magenta CSS will do. The background and fore color of all elements is set to magenta so you will know when you forgot to style something. The CSS file will set <em>all</em> elements to magenta, not only input fields.</p>
+<div>
     <input type="text" />
     <input type="submit" />
+</div>
 </section>
+<footer>
+    <p><a href="http://isgeek.net/" title="With &lt;3 - Jj">Jj</a> - <a href="http://twitter.com/jjdelc" title="Twitterz">@jjdelc</a></p>
+</footer>
 </body>
 </html>
