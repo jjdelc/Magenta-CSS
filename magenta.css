@@ -1,3 +1,14 @@
+/*
+Magenta CSS framework:
+    When setting a background color always set a foreground color
+
+Will set all elements' background and foreground color to magenta so you
+have to set a color for them and not rely on system's colors:
+
+https://github.com/jjdelc/Magenta-CSS
+@jjdelc
+
+*/
 * {
 background: #F0F;
 color: #F0F;
