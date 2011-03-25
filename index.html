@@ -56,7 +56,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 #get-it a {
 display: inline-block;
 text-align: center;
-width: 150px;
+min-width: 150px;
 font-size: 20px;
 font-weight: bold;
 background: #F0F;
@@ -71,15 +71,25 @@ background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 0, rgba(0,0,0,0.25) 50
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #rgba(0,0,0,0)), color-stop(25%, rgba(0,0,0,0.25)));
 text-decoration: none;
 }
+p, h1, h2 {
+color: #333;
+}
+#get-it span {
+color: #999;
+font-size: 12px;
+}
+p, h1, span, section, h2, a, footer, em {
+background: transparent;
+}
 </style>
 </head>
 <body>
 <h1>Magenta CSS Framework</h1>
-<p id="get-it"><a href="https://github.com/jjdelc/Magenta-CSS" title="Find me in Github">Get it</a></p>
+<p id="get-it"><a href="https://github.com/jjdelc/Magenta-CSS" title="Find me in Github">Get the code</a>
+<a href="javascript:(function(d){l=d.createElement('link');l.type='text/css';l.rel='stylesheet';l.href='http://isgeek.net/magenta/magenta.css';h=d.head;h.insertBefore(l,h.firstChild);})(document);" title="">Magentize Bookmarklet</a><br/><span>Drag the bookmarklet to your bookmarks bar and magentize any page</span></p>
 <section id="default">
 <h2>Default system colors</h2>
 <p>This is how your normal Input controls will render in an unstyled HTML page.</p>
-<p><a href="javascript:(function(d){l=d.createElement('link');l.type='text/css';l.rel='stylesheet';l.href='http://isgeek.net/magenta/magenta.css';h=d.head;h.insertBefore(l,h.firstChild);})(document);" title="">Magentize</a></p>
 <div>
     <input type="text" />
     <input type="submit" />
